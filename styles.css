@@ -19,11 +19,29 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: #004080;
+    /* background-color: #004080; */
+    background-image: linear-gradient(to left,#004080 , #408ad3, #FFA500);
+    animation: degrade-animado 15s   alternate infinite;
     color: white;
     text-align: center;
     padding: 50px 20px;
 }
+
+@keyframes degrade-animado {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }    
+}
+
+
+
+
+
+
+
 
 .hero .logo {
     width: 150px;
@@ -87,6 +105,14 @@ body {
 .bg-light {
     background-color: #f4f4f4;
 }
+
+.section h2:hover{
+    background-color:#004080 ;
+}
+
+
+
+
 
 /* Form */
 .form input, .form textarea, .form button {
